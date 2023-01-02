@@ -31,24 +31,24 @@ dynamic = ["version"]
 
 requires-python = ">=3.7"
 dependencies = [
-    "numpy~=1.20",
-    "scipy>=1.5.3, <2",
-    "tqdm>=4.60, <5",
-    "plum-dispatch>=1.5.1, <2",
-    "numba>=0.52, <0.57",
-    "igraph>=0.9.8, <0.11.0",
-    "jax>=0.3.16, <0.4",
-    "jaxlib>=0.3.15, <0.4",
-    "flax>=0.6, <0.7",
-    "orjson>=3.4, <4",
-    "optax>=0.1.3, <0.2",
-    "numba4jax>=0.0.10, <0.1",
+    "numpy>=1.20",
+    "scipy>=1.5.3",
+    "tqdm>=4.60",
+    "plum-dispatch>=1.5.1",
+    #"numba>=0.52",
+    "igraph>=0.9.8",
+    "jax>=0.3.16",
+    "jaxlib>=0.3.15",
+    "flax>=0.6",
+    "orjson>=3.44",
+    "optax>=0.1.3",
+    "numba4jax>=0.0.10",
 ]
 
 [project.optional-dependencies]
 mpi = [
-    "mpi4py>=3.0.1, <4", 
-    "mpi4jax>=0.3.9, <0.4"
+    "mpi4py>=3.0.1", 
+    "mpi4jax>=0.3.9"
     ]
 extra = [
     "tensorboardx>=2.0.0",
@@ -61,10 +61,10 @@ dev = [
     "pytest-cov>=2.10.1",
     "pytest-json-report>=1.3",
     "coverage>=5",
-    "networkx>=2.4, <3",
+    "networkx>=2.4",
     "pre-commit>=2.7",
-    "black==22.10.0",
-    "flake8==5.0.4",
+    "black>=22.10.0",
+    "flake8>=5.0.4",
     "wheel",
     "build",
 ]
@@ -89,7 +89,7 @@ version-file = "netket/_version.py"
 
 [tool.black]
 line-length = 88
-target-version = ['py37', 'py38', 'py39']
+target-version = ['py37', 'py38', 'py39', 'py10', 'py11', 'py12']
 include = '\.pyi?$'
 exclude = '''
 /(
